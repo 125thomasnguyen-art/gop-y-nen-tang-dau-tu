@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#061538">
+<title>Góp ý – Nền tảng Đầu tư bắt đầu từ Bảo vệ</title>
+<meta name="description" content="Cảm ơn Anh/Chị đã tham dự chương trình trực tuyến 'Nền tảng Đầu tư bắt đầu từ Bảo vệ' — 08/11/2026. Chia sẻ cảm nhận của bạn chỉ trong khoảng 1 phút.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Góp ý – Nền tảng Đầu tư bắt đầu từ Bảo vệ">
+<meta property="og:description" content="Chúng tôi rất mong nhận được cảm nhận của Anh/Chị về chương trình trực tuyến tối nay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061538; --navy-2:#0a1e40; --navy-3:#0c1e4d;
+  --gold:#e2b04f; --gold-soft:#f3d68c; --gold-deep:#c68a2e;
+  --ink:#eef2ff; --muted:#9db1d6; --line:#263554;
+  --good:#8fd6a0;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; font-family:'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(1100px 500px at 80% -10%, rgba(226,176,79,.14), transparent 60%),
+    radial-gradient(800px 480px at 0% 110%, rgba(38,90,180,.18), transparent 60%),
+    linear-gradient(180deg,#04102c 0%, #061538 55%, #04102c 100%);
+  min-height:100vh;
+}
+.shell{max-width:620px;margin:0 auto;padding:18px 14px 40px}
+.hero{
+  position:relative; overflow:hidden; border-radius:18px;
+  background:
+    radial-gradient(120% 140% at 85% 0%, rgba(226,176,79,.35), transparent 55%),
+    radial-gradient(100% 120% at 0% 100%, rgba(198,138,46,.25), transparent 50%),
+    linear-gradient(135deg, #0a1f45 0%, #061538 55%, #04102c 100%);
+  border:1px solid rgba(226,176,79,.38);
+  padding:36px 22px 30px; text-align:center;
+  box-shadow:0 18px 40px rgba(0,0,0,.45);
+}
+.hero-eyebrow{letter-spacing:.24em; text-transform:uppercase; font-size:11px; color:var(--gold); margin:0 0 12px; font-weight:700}
+.hero-title{font-family:'Playfair Display', serif; font-size:clamp(30px,7vw,44px); line-height:1.08; margin:0; color:#fdf6e3; font-weight:700}
+.hero-title .script{font-family:'Dancing Script', cursive; font-weight:700; color:var(--gold-soft); font-size:1.12em}
+.hero-when{margin:14px 0 0; color:#cfe0ff; font-size:14px}
+.card{
+  margin-top:14px; background:linear-gradient(180deg, rgba(10,30,64,.96), rgba(6,21,56,.96));
+  border:1px solid rgba(226,176,79,.22); border-radius:18px;
+  padding:22px 20px 26px; box-shadow:0 18px 44px rgba(0,0,0,.45);
+}
+.progress{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:20px}
+.progress i{height:4px;border-radius:99px;background:#1b2f55;display:block}
+.progress i.on{background:linear-gradient(90deg,var(--gold),var(--gold-soft))}
+.step{display:none}
+.step.active{display:block;animation:fade .28s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.kicker{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin:0 0 8px}
+h1{font-family:'Playfair Display',serif;font-size:30px;line-height:1.15;margin:0 0 10px;color:#fdf6e3}
+h2{font-family:'Playfair Display',serif;font-size:24px;line-height:1.2;margin:0 0 8px;color:#fdf6e3}
+h2 .num{font-family:'Be Vietnam Pro',sans-serif;font-size:12px;color:var(--gold);border:1px solid rgba(226,176,79,.6);border-radius:99px;padding:3px 8px;margin-right:8px;vertical-align:3px;letter-spacing:.08em}
+.sub{color:#d6e2f7;font-size:15.5px;line-height:1.65;margin:0 0 14px}
+.sub strong{color:#fff}
+.qhint{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 14px}
+.step-label{color:var(--muted);font-size:12.5px;letter-spacing:.06em;margin:0 0 10px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.meta-chip{border:1px solid rgba(226,176,79,.4);background:rgba(226,176,79,.08);color:var(--gold-soft);border-radius:99px;padding:7px 12px;font-size:13px;font-weight:600}
+.recap{border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 16px;background:rgba(255,255,255,.02)}
+.recap h2{font-size:15px;font-family:'Be Vietnam Pro',sans-serif;margin:0 0 12px;color:var(--gold-soft);letter-spacing:.04em}
+.recap-body{display:flex;gap:14px;align-items:flex-start}
+.recap-mark{flex:0 0 92px;width:92px;height:120px;border-radius:12px;border:1px solid rgba(226,176,79,.55);background:linear-gradient(160deg,#0a1f45,#061538);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:52px;color:var(--gold-soft);font-weight:700}
+.recap-info{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:14px;line-height:1.5;color:#d6e2f7}
+.recap-info strong{color:#fff}
+.fine{font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 6px}
+.fine-en{font-size:12.5px;color:#7e93bd;line-height:1.6;margin:0 0 18px}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.scale-btn{
+  appearance:none;border:1px solid var(--line);background:#0a1e40;color:var(--ink);
+  border-radius:12px;min-height:56px;font:700 20px 'Be Vietnam Pro',sans-serif;cursor:pointer;
+  transition:transform .12s ease, border-color .12s ease, background .12s ease;
+}
+.scale-btn:hover{transform:translateY(-1px);border-color:var(--gold)}
+.scale-btn.sel{background:linear-gradient(180deg,#f6d98c,#e2b04f);color:#231603;border-color:#f6d98c;box-shadow:0 8px 20px rgba(226,176,79,.3)}
+.scale-btn:focus-visible{outline:2px solid var(--gold-soft);outline-offset:2px}
+.scale-sub{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:8px}
+.rate{display:flex;flex-direction:column;gap:14px;margin-top:4px}
+.rate-row{border:1px solid var(--line);border-radius:14px;padding:14px 14px 12px;background:#0a1e40}
+.rate-row.done{border-color:rgba(226,176,79,.55)}
+.rate-name{font-weight:700;font-size:15px}
+.rate-hint{display:block;font-weight:400;font-size:12.5px;color:var(--muted);margin-top:2px}
+.rate-row .scale{margin-top:10px}
+.rate-row .scale-sub{margin-top:6px}
+textarea{
+  width:100%;resize:vertical;min-height:110px;background:#0a1e40;color:var(--ink);
+  border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:500 15px/1.6 'Be Vietnam Pro',sans-serif;
+}
+textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(226,176,79,.18)}
+textarea::placeholder{color:#6d82ab}
+.chips{display:grid;gap:10px}
+.chip{
+  display:flex;align-items:center;gap:12px;text-align:left;width:100%;
+  appearance:none;background:#0a1e40;color:var(--ink);border:1px solid var(--line);border-radius:12px;
+  padding:14px;font:600 15.5px 'Be Vietnam Pro',sans-serif;cursor:pointer;
+}
+.chip:hover{border-color:var(--gold)}
+.chip.sel{background:linear-gradient(180deg,#f6d98c,#e2b04f);color:#231603;border-color:#f6d98c}
+.chip-ico{font-size:18px;line-height:1}
+.nav{display:flex;gap:10px;margin-top:20px}
+.nav .btn{flex:1}
+.btn{
+  appearance:none;border:0;border-radius:12px;padding:14px 18px;font:700 15.5px 'Be Vietnam Pro',sans-serif;
+  cursor:pointer;width:100%;transition:transform .12s ease, filter .12s ease;
+}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:linear-gradient(180deg,#f6d98c,#e2b04f);color:#231603;box-shadow:0 10px 24px rgba(226,176,79,.28)}
+.btn.primary:hover{filter:brightness(1.05)}
+.btn.primary[disabled]{opacity:.65;cursor:wait;box-shadow:none}
+.btn.ghost{background:transparent;color:#cfe0ff;border:1px solid var(--line)}
+.err{color:#ffb4b4;font-size:13.5px;margin:12px 0 0}
+.big-thanks{font-size:44px;color:var(--gold);text-align:center;margin:6px 0 10px}
+.thanks-title{text-align:center}
+#s6 .sub{text-align:center}
+#s6 .btn{max-width:320px;margin:8px auto 0;display:block}
+.foot{text-align:center;color:#7e93bd;font-size:12.5px;margin:18px 0 0}
+@media (max-width:380px){
+  .shell{padding:12px 10px 32px}
+  .card{padding:18px 16px 22px}
+  .hero{padding:28px 16px 24px}
+  .recap-mark{flex-basis:76px;width:76px;height:100px;font-size:42px}
+  h1{font-size:26px}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="hero" role="img" aria-label="Nền tảng Đầu tư bắt đầu từ Bảo vệ">
+    <p class="hero-eyebrow">Prudential · Chương trình trực tuyến</p>
+    <p class="hero-title">Nền tảng Đầu tư<br><span class="script">bắt đầu từ Bảo vệ</span></p>
+    <p class="hero-when">Chủ nhật, 08/11/2026 · Online qua Zoom</p>
+  </header>
+
+  <main class="card">
+    <div class="progress" id="progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+    <section class="step active" data-step="0" id="s0">
+      <p class="kicker">Góp ý chương trình · Online qua Zoom</p>
+      <h1>Cảm ơn vì đã tham dự!</h1>
+      <p class="sub">Anh/Chị vừa tham dự chương trình trực tuyến <strong>“Nền tảng Đầu tư bắt đầu từ Bảo vệ”</strong> — Chủ nhật, 08/11/2026, qua Zoom. Cảm ơn Anh/Chị đã dành buổi tối cùng chúng tôi.</p>
+      <div class="meta">
+        <span class="meta-chip">✦ 9 câu hỏi</span>
+        <span class="meta-chip">⏱ 1 phút</span>
+        <span class="meta-chip">🕊 Ẩn danh</span>
+      </div>
+      <div class="recap">
+        <h2>Tóm tắt chương trình</h2>
+        <div class="recap-body">
+          <div class="recap-mark" aria-hidden="true">P</div>
+          <ul class="recap-info">
+            <li><strong>Nền tảng Đầu tư bắt đầu từ Bảo vệ</strong> — Prudential</li>
+            <li>🗓 Chủ nhật, 08/11/2026</li>
+            <li>💻 Online qua Zoom</li>
+            <li>✦ Chia sẻ · Gameshow · Rút thăm may mắn</li>
+          </ul>
+        </div>
+      </div>
+      <p class="fine">Khảo sát ẩn danh — không thu thập tên, số điện thoại hay email. Mọi góp ý chỉ dùng để cải thiện những chương trình tiếp theo.</p>
+      <p class="fine-en">This survey takes about 1 minute and is anonymous. Thank you for helping us make the next event even better.</p>
+      <div class="nav"><button class="btn primary" type="button" data-next="1">Bắt đầu góp ý →</button></div>
+    </section>
+
+    <section class="step" data-step="1" id="s1">
+      <p class="step-label">Bước 1 / 5 trong 5</p>
+      <h2><span class="num">01</span> Mức độ hài lòng chung</h2>
+      <p class="qhint">Nhìn chung, Anh/Chị hài lòng với chương trình tối nay ở mức nào?</p>
+      <div class="scale" id="q1" role="radiogroup" aria-label="Mức độ hài lòng chung, thang 1 đến 5">
+        <button type="button" class="scale-btn" data-value="1">1</button>
+        <button type="button" class="scale-btn" data-value="2">2</button>
+        <button type="button" class="scale-btn" data-value="3">3</button>
+        <button type="button" class="scale-btn" data-value="4">4</button>
+        <button type="button" class="scale-btn" data-value="5">5</button>
+      </div>
+      <div class="scale-sub"><span>1 · Chưa hài lòng</span><span>5 · Rất hài lòng</span></div>
+      <p class="err" id="err1" role="alert" hidden>Vui lòng chọn một mức từ 1 đến 5.</p>
+      <div class="nav"><button class="btn ghost" type="button" data-back="0">← Quay lại</button><button class="btn primary" type="button" data-next="2">Tiếp theo</button></div>
+    </section>
+
+    <section class="step" data-step="2" id="s2">
+      <p class="step-label">Bước 2 / 5 trong 5</p>
+      <h2><span class="num">02</span> Chấm điểm từng hạng mục</h2>
+      <p class="qhint">Anh/Chị chấm mỗi hạng mục từ 1 (chưa hài lòng) đến 5 (rất hài lòng).</p>
+      <div class="rate" id="rateList"></div>
+      <p class="err" id="err2" role="alert" hidden>Vui lòng chấm điểm tất cả các hạng mục.</p>
+      <div class="nav"><button class="btn ghost" type="button" data-back="1">← Quay lại</button><button class="btn primary" type="button" data-next="3">Tiếp theo</button></div>
+    </section>
+
+    <section class="step" data-step="3" id="s3">
+      <p class="step-label">Bước 3 / 5 trong 5</p>
+      <h2><span class="num">03</span> Điều Anh/Chị hài lòng nhất</h2>
+      <p class="qhint">Khoảnh khắc hay phần nào của chương trình khiến Anh/Chị ấn tượng nhất?</p>
+      <textarea id="q3" rows="4" maxlength="2000" placeholder="Ví dụ: Phần chia sẻ rất dễ hiểu, gameshow vui…" aria-label="Điều Anh/Chị hài lòng nhất"></textarea>
+      <p class="err" id="err3" role="alert" hidden>Vui lòng chia sẻ điều Anh/Chị hài lòng nhất.</p>
+      <div class="nav"><button class="btn ghost" type="button" data-back="2">← Quay lại</button><button class="btn primary" type="button" data-next="4">Tiếp theo</button></div>
+    </section>
+
+    <section class="step" data-step="4" id="s4">
+      <p class="step-label">Bước 4 / 5 trong 5</p>
+      <h2><span class="num">04</span> Cần cải thiện &amp; góp ý</h2>
+      <p class="qhint">Có điều gì Anh/Chị mong chúng tôi làm tốt hơn ở chương trình sau?</p>
+      <textarea id="q4" rows="4" maxlength="2000" placeholder="Ví dụ: Mong có thêm thời gian hỏi đáp…" aria-label="Cần cải thiện và góp ý"></textarea>
+      <p class="err" id="err4" role="alert" hidden>Vui lòng chia sẻ góp ý của Anh/Chị.</p>
+      <div class="nav"><button class="btn ghost" type="button" data-back="3">← Quay lại</button><button class="btn primary" type="button" data-next="5">Tiếp theo</button></div>
+    </section>
+
+    <section class="step" data-step="5" id="s5">
+      <p class="step-label">Bước 5 / 5 trong 5</p>
+      <h2><span class="num">05</span> Mời khách tham dự chương trình Quý 4</h2>
+      <p class="qhint">Anh/Chị có đồng hành cùng chúng tôi trong chương trình Quý 4 sắp tới không?</p>
+      <div class="chips" id="q5" role="radiogroup" aria-label="Mời khách Quý 4">
+        <button type="button" class="chip" data-value="Chắc chắn có"><span class="chip-ico">✦</span>Chắc chắn có</button>
+        <button type="button" class="chip" data-value="Có thể"><span class="chip-ico">◐</span>Có thể</button>
+        <button type="button" class="chip" data-value="Chưa chắc chắn"><span class="chip-ico">○</span>Chưa chắc chắn</button>
+      </div>
+      <p class="err" id="err5" role="alert" hidden>Vui lòng chọn một phương án.</p>
+      <div class="nav"><button class="btn ghost" type="button" data-back="4">← Quay lại</button><button class="btn primary" type="button" id="submitBtn">Gửi góp ý</button></div>
+    </section>
+
+    <section class="step" data-step="6" id="s6">
+      <div class="big-thanks">✦</div>
+      <h2 class="thanks-title">Cảm ơn Anh/Chị!</h2>
+      <p class="sub">Góp ý của Anh/Chị đã được ghi nhận. Hẹn gặp lại Anh/Chị trong chương trình Quý 4.</p>
+      <button class="btn primary" type="button" data-goto="0">Gửi thêm góp ý khác</button>
+    </section>
+  </main>
+  <p class="foot">Được tạo bởi đội ngũ Prudential — Hồ Chí Minh</p>
+</div>
+
+<script>
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyox23JBllbrx2faY40Y3-jWtF6bc5vOTIP254pqU6d8nmDtFwnl5DsD75a9BgVjaax/exec';
+const TOTAL = 5;
+const LAST = 6;
+const ITEMS = ['Nội dung chia sẻ', 'Gameshow', 'Rút thăm may mắn', 'Quà tặng', 'Khâu chốt hợp đồng'];
+const ITEM_HINTS = {
+  'Nội dung chia sẻ': 'Chia sẻ trong chương trình',
+  'Gameshow': 'Trò chơi tương tác',
+  'Rút thăm may mắn': 'Phần rút thăm cuối chương trình',
+  'Quà tặng': 'Quà tặng cho khách tham dự',
+  'Khâu chốt hợp đồng': 'Tư vấn & hoàn tất hợp đồng'
+};
+const state = { satisfaction: null, ratings: {}, liked: '', improve: '', inviteQ4: '' };
+
+const $ = id => document.getElementById(id);
+const steps = Array.from(document.querySelectorAll('.step'));
+const bars = Array.from(document.querySelectorAll('#progress i'));
+
+const rateList = $('rateList');
+ITEMS.forEach(name => {
+  const row = document.createElement('div');
+  row.className = 'rate-row';
+  row.dataset.item = name;
+  row.innerHTML =
+    '<div class="rate-name">' + name + '<span class="rate-hint">' + ITEM_HINTS[name] + '</span></div>' +
+    '<div class="scale" role="radiogroup" aria-label="' + name + ', thang 1 đến 5">' +
+    [1, 2, 3, 4, 5].map(v => '<button type="button" class="scale-btn" data-value="' + v + '">' + v + '</button>').join('') +
+    '</div><div class="scale-sub"><span>1 · Chưa hài lòng</span><span>5 · Rất hài lòng</span></div>';
+  rateList.appendChild(row);
+});
+
+function goTo(n) {
+  steps.forEach(s => s.classList.toggle('active', Number(s.dataset.step) === n));
+  const filled = Math.max(1, Math.min(n, TOTAL));
+  bars.forEach((b, i) => b.classList.toggle('on', i < filled));
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toggleGroup(container, btn, value, assign) {
+  container.querySelectorAll('.scale-btn, .chip').forEach(b => b.classList.toggle('sel', b === btn));
+  assign(value);
+}
+
+$('q1').addEventListener('click', e => {
+  const btn = e.target.closest('.scale-btn');
+  if (!btn) return;
+  toggleGroup($('q1'), btn, Number(btn.dataset.value), v => { state.satisfaction = v; });
+  $('err1').hidden = true;
+});
+
+rateList.addEventListener('click', e => {
+  const btn = e.target.closest('.scale-btn');
+  if (!btn) return;
+  const row = btn.closest('.rate-row');
+  const group = row.querySelector('.scale');
+  toggleGroup(group, btn, Number(btn.dataset.value), v => { state.ratings[row.dataset.item] = v; });
+  row.classList.add('done');
+  $('err2').hidden = true;
+});
+
+$('q5').addEventListener('click', e => {
+  const btn = e.target.closest('.chip');
+  if (!btn) return;
+  toggleGroup($('q5'), btn, btn.dataset.value, v => { state.inviteQ4 = v; });
+  $('err5').hidden = true;
+});
+
+function validate(step) {
+  if (step === 1) return state.satisfaction !== null;
+  if (step === 2) return ITEMS.every(n => typeof state.ratings[n] === 'number');
+  if (step === 3) return $('q3').value.trim() !== '';
+  if (step === 4) return $('q4').value.trim() !== '';
+  if (step === 5) return state.inviteQ4 !== '';
+  return true;
+}
+
+document.querySelectorAll('[data-next]').forEach(btn => btn.addEventListener('click', () => {
+  const cur = Number(btn.closest('.step').dataset.step);
+  if (cur > 0 && !validate(cur)) { $('err' + cur).hidden = false; return; }
+  if (cur === 3) state.liked = $('q3').value.trim();
+  if (cur === 4) state.improve = $('q4').value.trim();
+  goTo(Number(btn.dataset.next));
+}));
+
+document.querySelectorAll('[data-back]').forEach(btn => btn.addEventListener('click', () => goTo(Number(btn.dataset.back))));
+document.querySelectorAll('[data-goto]').forEach(btn => btn.addEventListener('click', () => {
+  state.satisfaction = null; state.ratings = {}; state.liked = ''; state.improve = ''; state.inviteQ4 = '';
+  document.querySelectorAll('.sel').forEach(b => b.classList.remove('sel'));
+  document.querySelectorAll('.rate-row').forEach(r => r.classList.remove('done'));
+  $('q3').value = ''; $('q4').value = '';
+  goTo(Number(btn.dataset.goto));
+}));
+
+$('submitBtn').addEventListener('click', async () => {
+  if (!validate(5)) { $('err5').hidden = false; return; }
+  const btn = $('submitBtn');
+  btn.disabled = true; btn.textContent = 'Đang gửi…';
+  const payload = {
+    submittedAt: new Date().toISOString(),
+    satisfaction: state.satisfaction,
+    ratings: state.ratings,
+    liked: $('q3').value.trim(),
+    improve: $('q4').value.trim(),
+    inviteQ4: state.inviteQ4
+  };
+  try {
+    await fetch(ENDPOINT, {
+      method: 'POST', mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload)
+    });
+    goTo(LAST);
+  } catch (err) {
+    alert('Không gửi được góp ý. Anh/Chị vui lòng kiểm tra mạng rồi thử lại.');
+    btn.disabled = false; btn.textContent = 'Gửi góp ý';
+  }
+});
+
+goTo(0);
+</script>
+</body>
+</html>
